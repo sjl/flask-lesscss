@@ -1,8 +1,3 @@
-.. flask-lesscss documentation master file, created by
-   sphinx-quickstart on Tue May 11 18:54:04 2010.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to flask-lesscss's documentation!
 =========================================
 
@@ -11,10 +6,13 @@ be a pain to run ``lessc --watch static/style.less`` every time you want to
 work on your styles. It gets even worse when you have more than one ``.less``
 file.
 
-flask-lesscss is a small Flask extension that will automatically re-render
+flask-lesscss is a small `Flask`_ extension that will automatically re-render
 your ``.less`` files into CSS before each request if they've changed.
 
 **NOTE:** You need to have the LessCSS gem installed for this to work.
+
+.. _LessCSS: http://lesscss.org/
+.. _Flask: http://flask.pocoo.org/
 
 Installation
 ------------
@@ -56,8 +54,6 @@ statement::
 
 If you do this *you'll* be responsible for rendering the ``.less`` files into
 CSS when you deploy in non-debug mode to your production server.
-
-.. _LessCSS: http://lesscss.org/
 
 Contribute
 ----------
