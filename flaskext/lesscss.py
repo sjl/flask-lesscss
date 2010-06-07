@@ -26,7 +26,11 @@ def lesscss(app):
         
         for less_path in less_paths:
             css_path = os.path.splitext(less_path)[0] + '.css'
-            css_mtime, less_mtime = os.path.getmtime(css_path), os.path.getmtime(less_path)
+            if not os.path.isfile(css_path):
+                css_mtime = -1
+            else:
+                css_mtime = os.path.getmtime(css_path)
+            less_mtime = os.path.getmtime(less_path)
             if less_mtime >= css_mtime:
                 subprocess.call(['lessc', less_path, css_path], shell=False)
 
