@@ -19,13 +19,13 @@ Installation
 
 Install flask-lesscss with `pip`_::
 
-    pip install -e 'hg+http://bitbucket.org/sjl/flask-lesscss@v0.9.0#egg=flask-lesscss'
+    pip install -e 'hg+http://bitbucket.org/sjl/flask-lesscss@v0.9.1#egg=flask-lesscss'
 
 Prefer `git`_ to `Mercurial`_?
 
 ::
 
-    pip install -e 'git+http://github.com/sjl/flask-lesscss.git@v0.9.0#egg=flask-lesscss'
+    pip install -e 'git+http://github.com/sjl/flask-lesscss.git@v0.9.1#egg=flask-lesscss'
 
 .. _pip: http://pip.openplans.org/
 .. _git: http://git-scm.com/

@@ -19,7 +19,7 @@ from setuptools import setup
 
 setup(
     name='flask-lesscss',
-    version='0.9.0',
+    version='0.9.1',
     url='http://sjl.bitbucket.org/flask-lesscss/',
     license='MIT',
     author='Steve Losh',
