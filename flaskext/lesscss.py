@@ -18,7 +18,7 @@ def lesscss(app):
         if not hasattr(app, 'static_url_path'):
             from warnings import warn
             warn(DeprecationWarning('static_path is called '
-                                    'static_url_path since Flask 0.7 '),
+                                    'static_url_path since Flask 0.7'),
                                     stacklevel=2)
         
             static_url_path = app.static_path
