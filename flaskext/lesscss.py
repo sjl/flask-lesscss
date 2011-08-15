@@ -15,7 +15,18 @@ import os, subprocess
 def lesscss(app):
     @app.before_request
     def _render_less_css():
-        static_dir = app.root_path + app.static_path
+        if not hasattr(app, 'static_url_path'):
+            from warnings import warn
+            warn(DeprecationWarning('static_path is called '
+                                    'static_url_path since Flask 0.7 '),
+                                    stacklevel=2)
+        
+            static_url_path = app.static_path
+        
+        else:
+            static_url_path = app.static_url_path
+        
+        static_dir = app.root_path + app.static_url_path
         
         less_paths = []
         for path, subdirs, filenames in os.walk(static_dir):
