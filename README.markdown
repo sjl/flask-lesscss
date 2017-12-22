@@ -1,7 +1,6 @@
 flask-lesscss
 =============
 
-A small Flask extension that makes it easy to use LessCSS with your Flask
-application.
+I've passed on maintainership of flask-lesscss, please use [the new
+repo](https://github.com/AbhishekBiswal/flask-lesscss) from now on!
 
-See the [documentation](http://sjl.bitbucket.org/flask-lesscss/) for more information.
